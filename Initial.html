@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .card {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .status {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Daily Dashboard</h1>
+
+    <div class="metric">
+        <span>Tasks Completed</span>
+        <span>18</span>
+    </div>
+
+    <div class="metric">
+        <span>Focus Time</span>
+        <span>5.2 Hours</span>
+    </div>
+
+    <div class="metric">
+        <span>System Status</span>
+        <span class="status">Online</span>
+    </div>
+
+    <button onclick="showMessage()">Refresh Summary</button>
+</div>
+
+<script>
+function showMessage() {
+    alert("Dashboard updated successfully.");
+}
+</script>
+
+</body>
+</html>
